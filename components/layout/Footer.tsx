@@ -1,3 +1,5 @@
+'use client'
+
 import Link from 'next/link'
 import { Instagram, Facebook, Mail, Phone, MapPin } from 'lucide-react'
 
