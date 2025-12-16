@@ -42,6 +42,9 @@ export const metadata: Metadata = {
     title: 'Bubble GI - Regalos Personalizados',
     description: 'Encanto en cada burbuja. Regalos personalizados únicos para ocasiones especiales.',
   },
+  verification: {
+    google: 'PENDING_USER_VERIFICATION_CODE', // TODO: User needs to provide this code
+  },
 }
 
 export default function RootLayout({
