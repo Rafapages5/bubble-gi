@@ -76,22 +76,24 @@ export default function HomePage() {
               Regalos personalizados que hacen que cada momento sea especial
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button
-                size="lg"
-                variant="outline"
-                className="bg-white text-primary hover:bg-white/90 border-white"
-                asChild
-              >
-                <Link href="/productos">Ver Productos</Link>
-              </Button>
-              <Button
-                size="lg"
-                variant="ghost"
-                className="text-white border-2 border-white hover:bg-white hover:text-primary"
-                asChild
-              >
-                <Link href="/sobre-nosotros">Conoce más</Link>
-              </Button>
+              <Link href="/productos">
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="bg-white text-primary hover:bg-white/90 border-white"
+                >
+                  Ver Productos
+                </Button>
+              </Link>
+              <Link href="/sobre-nosotros">
+                <Button
+                  size="lg"
+                  variant="ghost"
+                  className="text-white border-2 border-white hover:bg-white hover:text-primary"
+                >
+                  Conoce más
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
@@ -184,9 +186,9 @@ export default function HomePage() {
             <p className="text-bubble-gray mb-6">
               Los productos estarán disponibles próximamente
             </p>
-            <Button asChild>
-              <Link href="/productos">Ver Todos los Productos</Link>
-            </Button>
+            <Link href="/productos">
+              <Button>Ver Todos los Productos</Button>
+            </Link>
           </div>
         </div>
       </section>
@@ -200,14 +202,15 @@ export default function HomePage() {
           <p className="text-xl mb-8 text-white/90">
             Personaliza tus productos favoritos y sorprende a tus seres queridos
           </p>
-          <Button
-            size="lg"
-            variant="outline"
-            className="bg-white text-primary hover:bg-white/90 border-white"
-            asChild
-          >
-            <Link href="/productos">Comenzar Ahora</Link>
-          </Button>
+          <Link href="/productos">
+            <Button
+              size="lg"
+              variant="outline"
+              className="bg-white text-primary hover:bg-white/90 border-white"
+            >
+              Comenzar Ahora
+            </Button>
+          </Link>
         </div>
       </section>
 
@@ -221,15 +224,15 @@ export default function HomePage() {
             <p className="text-lg text-bubble-gray mb-6">
               @bubblegi_ - Inspírate con nuestras creaciones
             </p>
-            <Button variant="primary" asChild>
-              <a
-                href="https://instagram.com/bubblegi_"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+            <a
+              href="https://instagram.com/bubblegi_"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button variant="primary">
                 Seguir en Instagram
-              </a>
-            </Button>
+              </Button>
+            </a>
           </div>
         </div>
       </section>
