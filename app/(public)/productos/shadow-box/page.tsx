@@ -119,6 +119,7 @@ export default function ShadowBoxPage() {
                 description="Caja de regalo personalizada Shadow Box con flores y diseño único. Perfecta para cualquier ocasión especial."
                 image="https://bubblegi.com/images/products/shadow-box-placeholder.jpg" // Placeholder for now
                 price={currentPrice}
+                url="https://bubblegi.com/productos/shadow-box"
             />
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

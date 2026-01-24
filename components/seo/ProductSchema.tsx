@@ -10,6 +10,7 @@ interface ProductSchemaProps {
     availability?: 'InStock' | 'OutOfStock' | 'PreOrder'
     brand?: string
     sku?: string
+    url?: string
 }
 
 export function ProductSchema({
@@ -21,6 +22,7 @@ export function ProductSchema({
     availability = 'InStock',
     brand = 'Bubble GI',
     sku,
+    url,
 }: ProductSchemaProps) {
     const schema = {
         '@context': 'https://schema.org',
@@ -35,7 +37,7 @@ export function ProductSchema({
         },
         offers: {
             '@type': 'Offer',
-            url: typeof window !== 'undefined' ? window.location.href : '',
+            url: url || 'https://bubblegi.com',
             priceCurrency: currency,
             price: price,
             availability: `https://schema.org/${availability}`,
